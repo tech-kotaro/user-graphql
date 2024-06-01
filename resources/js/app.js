@@ -12,9 +12,9 @@ import TaskEditComponent from "./components/TaskEditComponent.vue";
 import PokemonComponent from "./components/PokemonComponent.vue";
 import PokemonShowComponent from "./components/PokemonShowComponent.vue";
 import PokemonSearchComponent from "./components/PokemonSearchComponent.vue";
-import apolloProvider from './apollo-client.js';
-
-
+import UserListComponent from "./components/UserListComponent.vue";
+import UserEditComponent from "./components/UserEditComponent.vue";
+import apolloProvider from './apollo-client-other.js';
 
 app.component('example-component', ExampleComponent);
 app.component('header-component', HeaderComponent);
@@ -60,6 +60,17 @@ const router = createRouter({
             path: '/pokemon-search',
             name: 'pokemon.search',
             component: PokemonSearchComponent,
+            props: true
+        },
+        {
+            path: '/users',
+            name: 'users.list',
+            component: UserListComponent
+        },
+        {
+            path: '/users/:userId/edit',
+            name: 'users.edit',
+            component: UserEditComponent,
             props: true
         },
     ]
