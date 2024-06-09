@@ -34,7 +34,7 @@
                 var token = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 
                 var xhr = new XMLHttpRequest();
-                    xhr.open('POST', 'http://localhost:8888/pokemongraphql/pokemongraphqllaravel/public/api/tasks');
+                    xhr.open('POST', 'http://localhost:8080/pokemongraphql/pokemongraphqllaravel/public/api/tasks');
                     xhr.setRequestHeader('Content-Type', 'application/json');
                     xhr.setRequestHeader('X-CSRF-TOKEN', token);
 

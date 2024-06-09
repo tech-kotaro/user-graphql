@@ -42,7 +42,7 @@
             methods: {
                 getTask() {
                     var xhr = new XMLHttpRequest();
-                    xhr.open('GET', 'http://localhost:8888/pokemongraphql/pokemongraphqllaravel/public/api/tasks/'+ this.taskId);
+                    xhr.open('GET', 'http://localhost:8080/pokemongraphql/pokemongraphqllaravel/public/api/tasks/'+ this.taskId);
                     xhr.addEventListener("load", (event) => { // loadイベントを登録します。
                         // console.log(JSON.parse(this.response)); 
                         this.task = JSON.parse(event.target.response);
@@ -52,7 +52,7 @@
                 },
                 update() {
                     var xhr = new XMLHttpRequest();
-                    xhr.open('PUT', 'http://localhost:8888/pokemongraphql/pokemongraphqllaravel/public/api/tasks/'+ this.taskId);
+                    xhr.open('PUT', 'http://localhost:8080/pokemongraphql/pokemongraphqllaravel/public/api/tasks/'+ this.taskId);
                     xhr.setRequestHeader('Content-Type', 'application/json');
                     xhr.addEventListener("load", (event) => { // loadイベントを登録します。
                         // console.log(JSON.parse(this.response)); 

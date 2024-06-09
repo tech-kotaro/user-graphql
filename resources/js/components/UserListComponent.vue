@@ -134,7 +134,7 @@
                             created_at
                             updated_at
                         }
-                    }`,
+                }`,
         },
         watch: {
             userName: function(newVal) {

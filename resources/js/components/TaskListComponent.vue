@@ -52,7 +52,7 @@
                     //     });
 
                     var xhr = new XMLHttpRequest();
-                    xhr.open('GET', 'http://localhost:8888/pokemongraphql/pokemongraphqllaravel/public/api/tasks');
+                    xhr.open('GET', 'http://localhost:8080/pokemongraphql/pokemongraphqllaravel/public/api/tasks');
                     xhr.addEventListener("load", (event) => { // loadイベントを登録します。
                         // console.log(JSON.parse(this.response)); 
                         this.tasks = JSON.parse(event.target.response);
@@ -66,7 +66,7 @@
                         //         this.getTasks();
                         //     });
                         var xhr = new XMLHttpRequest();
-                        xhr.open('DELETE', 'http://localhost:8888/pokemongraphql/pokemongraphqllaravel/public/api/tasks/'+id);
+                        xhr.open('DELETE', 'http://localhost:8080/pokemongraphql/pokemongraphqllaravel/public/api/tasks/'+id);
                         xhr.addEventListener("load", (event) => { // loadイベントを登録します。
                             // console.log(JSON.parse(this.response)); 
                             if (xhr.status >= 200 && xhr.status < 300) {
