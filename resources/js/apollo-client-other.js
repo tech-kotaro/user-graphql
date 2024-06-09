@@ -5,7 +5,7 @@ const cache = new InMemoryCache()
 
 const apolloClient = new ApolloClient({
   cache,
-  uri: 'http://localhost:8080/pokemongraphql/pokemongraphqllaravel/public/graphql',
+  uri: 'http://localhost:8080/user-graphql/public/graphql',
 })
 
 const apolloProvider = createApolloProvider({

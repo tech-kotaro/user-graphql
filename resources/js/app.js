@@ -20,7 +20,7 @@ app.component('example-component', ExampleComponent);
 app.component('header-component', HeaderComponent);
 
 const router = createRouter({
-    history: createWebHistory('/pokemongraphql/pokemongraphqllaravel/public/'),
+    history: createWebHistory('/user-graphql/public/'),
     routes: [
         {
             path: '/tasks',
